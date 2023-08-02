@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myFolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Hero section -->
@@ -24,50 +27,61 @@
         </nav>
         <img src="./images/Blur_background.png" alt="blur Blur_background" class="blur-bg">
         <img src="./images/round_pattern.png" alt="round_pattern" class="roundptt">
-        <div class="header">
-            <h1>Hello<div class="hr-line"></div></h1>
-            <p>I am <span class="multiText"></span></p>
-            <div class="header-btn">
-                <a href="mailto:samuelmensqh@gmail.com" class="hire">Hire me</a>
-                <a href="cv/Samuel-Mensah-Boafo-Resume.docx" class="dwn-cv" download="Resume">Download cv</a>
+
+
+        <div class="hero-flex">
+            <div>
+                <div class="header" data-aos="fade-right" data-aos-duration="1000">
+                    <div>
+                        <h1>Hello<div class="hr-line"></div></h1>
+                        <p class="hero-p">I am <span class="multiText"></span></p>
+                    </div>
+                    <div class="header-btn">
+                        <a href="mailto:samuelmensqh@gmail.com" class="hire">Hire me</a>
+                        <a href="cv/Samuel-Mensah-Boafo-Resume.docx" class="dwn-cv" download="Resume">Download cv</a>
+                    </div>
+            
+                </div>
+            </div>
+            
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <img src="/images/man5.png" alt="man using laptop">
             </div>
         </div>
-        <div class="skills">
-            <marquee behavior="" direction="">
-                <div class="maq">
-                    <img src="/images/html.png" alt="html image" class="maq-img">
-                    <img src="/images/css.png" alt="css image" class="maq-img">
-                    <img src="/images/js.png" alt="javaScript image" class="maq-img">
-                    <img src="/images/skills/tailwind-css.png" alt="tailwind-css image" class="maq-img">
-                    <img src="/images/skills/Git-logo.svg.png" alt="git image" class="maq-img">
-                    <img src="/images/skills/github-logo-label-text-symbol-transparent-png-2425199.png" alt="git image" class="maq-img">
-                    <img src="/images/skills/Responsive_Web_Design_Demo_Template.svg" alt="responsive image" class="maq-img">
-                    <img src="/images/skills/material-ui-4a66e3fd52c7ec9469f4684b68aca251.png" alt="material ui image" class="maq-img mat-ui">
-                </div>
-            </marquee>
+        <div class="stat" data-aos="fade-up" data-aos-duration="2000">
+            <div>
+                <h3 class="stat-header">02+</h3>
+                <p class="stat-txt">Years experience</p>
+            </div>
+            <div>
+                <h3 class="stat-header">5+</h3>
+                <p class="stat-txt">Completed projects</p>
+            </div>
+            <div>
+                <h3 class="stat-header">02+</h3>
+                <p class="stat-txt">Helped Companies</p>
+            </div>
         </div>
     </section>
     <!-- End of hero section -->
     
     <!------------------------- About --------------------->
     <section id="about">
-        <h2>about</h2>
+        <h2>about me</h2>
     <div class="about-desc">
-        <div class="my-img">
+        <div class="my-img" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <img src="/images/my-pic.jpg" alt="my images">
         </div>
-        <div class="about-txt">
-            <p>I'm Samuel Mensah Boafo, a  Frontend website developer with 2 years of experience in the industry. I was born 
-                in the year 2001
-                from Africa(Ghana). I enjoy solving critical issue which lead me to love being a tech boy. In my leisure time I watch youtube videos about tech to refresh my mind
-                and some times take a walk
+        <div class="about-txt" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+            <p>With over 2 years of extensive experience in creating professional websites for businessess, brands and individuals,
+                I excel at connecting you with your target audience through my combined developer and SEO skills
             </p>
-            <h2 class="edu-h2">Education</h2>
-            <p>Computer Technology ( 2017 - 2020)</p>
-            <p>Accra Technical Training Center (ATTC)</p>
+            <h2 class="edu-h2" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Education</h2>
+            <p data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Computer Technology ( 2017 - 2020)</p>
+            <p data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Accra Technical Training Center (ATTC)</p>
             <br>
-            <p>Computer Science ( 2022 - current)</p>
-            <p>Accra Technical University  (ATU)</p>
+            <p data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Computer Science ( 2022 - current)</p>
+            <p data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Accra Technical University  (ATU)</p>
         </div>
     </div>
     </section>
@@ -75,10 +89,10 @@
         
         <!------------------------- Experience --------------------->
     <section id="experience">
-            <h2>Experience</h2>
+            <h2>Work Experience</h2>
         <div class="experience-item">
             <div class="exp-flex">
-                <div class="exp-txt">
+                <div class="exp-txt" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                     <h3>
                     Frontend website developer <br>
                         <small>Novanest ltd, Greater Accra</small>
@@ -92,7 +106,7 @@
                         which I happened to be one of the engineer and worked on several projects.
                     </p>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
                     <img src="images/programming-team.jpg" alt="Image of programming team" class="exp-img">
                 </div>
             </div>
@@ -100,10 +114,10 @@
         
         <div class="experience-item">
             <div class="exp-flex desc-2">
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
                     <img src="images/interns.jpg" alt="Training personnel teaching other person" class="exp-img">
                 </div>
-                <div class="exp-txt">
+                <div class="exp-txt"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                     <h3>
                         Internship <br>
                         <small> Hisense (Sun Electronics ltd), East Legon- Accra</small>
@@ -127,7 +141,7 @@
     <section id="project">
         <h2>Projects</h2>
         <div class="project-flex">
-            <div class="project-item">
+            <div class="project-item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
                 <div class="project-img">
                     <img src="/images/calculator.png" alt="calculator">
                 </div>
@@ -148,7 +162,7 @@
                     </div>
                 </div>
             </div>    
-            <div class="project-item">
+            <div class="project-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
                 <div class="project-img">
                     <img src="/images/Fylo-website.svg" alt="Flyo website image">
                 </div>
@@ -169,7 +183,7 @@
                     </div>
                 </div> 
             </div>    
-            <div class="project-item">
+            <div class="project-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
                 <div class="project-img">
                     <img src="/images/motivation-quote.svg" alt="Motivation website">
                 </div>
@@ -189,7 +203,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="project-item">
+            <div class="project-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
                 <div class="project-img">
                     <img src="/images/Age-calculator.svg" alt="Age calculator website">
                 </div>
@@ -209,7 +223,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="project-item">
+            <div class="project-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
                 <div class="project-img">
                     <img src="/images/three-card.png" alt="Three card website image">
                 </div>
@@ -234,16 +248,31 @@
 
     <!------------------------- Tech Stack --------------------->
     <section id="tech" class="rec">
-        <h2>Tech Stacks</h2>
+        <h2>Technologies use</h2>
         <div class="tech-items">
-            <div class="tech-item-1">
-                <img src="images/html.png" alt="html">
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>Html</p>
             </div>
-            <div class="tech-item-2">
-                <img src="images/css.png" alt="css">
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>Css</p>
             </div>
-            <div class="tech-item-3">
-                <img src="images/js.png" alt="js">
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>Tailwind</p>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>React js</p>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>PHP</p>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>Java</p>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                <p>Mysql</p>
             </div>
         </div>
     </section>
@@ -251,8 +280,8 @@
     
     <!------------------------- Contact --------------------->
     <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-items">
+        <h2>Contact Me</h2>
+        <div class="contact-items" data-aos="zoom-in" data-aos-duration="1000">
             <div class="contact">
                 <p><b>Email:</b><a href="mailto:samuelmensqh@gmail.com" class="cnt-link"> samuelmensqh@gmail.com</a></p>
                 <p><b>Phone:</b><a href="tel:+233243731398" class="cnt-link"> +233 24 373 1398</a></p>
@@ -282,10 +311,17 @@
     <!------------------ Footer  -------------------------->
     <section id="tech" class="rec footer">
         <div class="tech-items">
-            <p>Copyright &copy; <span> 2023</span></p>
+            <p>&copy; <span> Samuel Mensah Boafo.</span> All right are reserved.</p>
         </div>
     </section>
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS animation End -->
 </body>
 </html>
