@@ -182,12 +182,6 @@ li{
     border: 1px solid #f5f3ba;
     color: var(--text-color-white);
 }
-.blur-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
 
 .roundptt {
     position: absolute;
@@ -466,9 +460,6 @@ p{
     }
     .desc-2{
         flex-flow: column-reverse wrap;
-    }
-    .blur-bg{
-        display: none;
     }
 }
 
